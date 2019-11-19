@@ -1,4 +1,4 @@
-# CSCI201FinalProject
+# App-etizers
 
 //TODO: Web Pages:
   1. Main Search Page
