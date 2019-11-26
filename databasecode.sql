@@ -26,7 +26,7 @@ CREATE TABLE dishes(
 );
 
 //creating the ingredients table
-CREATE TABLE dishes_ingredients(
+CREATE TABLE ingredients(
    ingredient_name varchar(255)
     FOREIGN KEY (ingredient_id) REFERENCES dishes_ingredients(ingredient_id)
 );
