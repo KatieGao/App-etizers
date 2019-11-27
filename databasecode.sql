@@ -45,12 +45,48 @@ CREATE TABLE dishes_ingredients(
 
 //creating the dishes table
 CREATE TABLE dishes(
-    dish_id int(11) PRIMARY KEY,
+    dish_id int(11) PRIMARY KEY AUTO_INCREMENT,
     FOREIGN KEY (restaurant_id) REFERENCES restaurants(restaurant_id),
     price double(5,2),
     dish_name varchar(255),
     dish_thumbnail varchar(255)    
 );
+INSERT INTO dishes (dish_name,price,restaurant_id)
+  VALUES ('SEDONA TORTILLA',3.99,1),
+  	 ('THE ORIGINAL BBQ CHICKEN CHOPPED SALAD' , 8.19, 1),
+	 ('SANTA FE POWER BOWL' , 8.19, 1),
+  	 ('CHICKEN TEQUILA FETTUCCINE' , 9.19, 1),
+  	 ('KUNG PAO SPAGHETTI' , 8.19, 1),
+  	 ('KUNG PAO SPAGHETTI + Chicken' , 9.19, 1),
+  	 ('KUNG PAO SPAGHETTI + Shrimp' , 11.99, 1),
+  	 ('PENNE BOLOGNESE' , 9.19, 1),
+  	 ('THE ORIGINAL BBQ CHICKEN PIZZA' , 8.09, 1),
+  	 ('MARGHERITA' , 7.69, 1),
+  	 ('MUSHROOM PEPPERONI SAUSAGE' , 8.19, 1),
+	 ('PEPPERONI' , 7.69, 1),
+  	 ('MEAT CRAVERS' , 8.59, 1),
+  	 ('AHI TUNA AVOCADO' , 12.00, 2),
+  	 ('SPICY HAWAIIAN AHI TUNA' , 12.00, 2),
+  	 ('MANGO CHICKEN' , 11.00, 2),
+  	 ('TERIYAKI CHICKEN RICE BOWL', 9.49, 3),
+  	 ('SALMON RICE BOWL' , 10.49, 3),
+  	 ('PORK CUTLET RICE BOWL' , 9.99, 3),
+  	 ('BBQ BEEF BOWL' , 9.99, 3),
+  	 ('CHOP SUEY RICE BOWL' , 8.49, 3),
+  	 ('CHARBURGER' , 3.75, 4),
+  	 ('PORTABELLA CHARBURGER' , 5.35, 4),
+  	 ('TERIYAKI CHARBURGER' , 4.05, 4),
+  	 ('VEGGIE BURGER' , 6.05, 4),
+  	 ('CHICKEN CLUB SANDWICH' , 8.20, 4),
+  	 ('AHI TUNA FILET SANDWICH' , 8.20, 4),
+  	 ('ORANGE CHICKEN' , 4.40, 5),
+  	 ('BROCCOLI BEEF' , 4.40, 5),
+	 ('HONEY WALNUT SHRIMP' , 5.65, 5),
+  	 ('FRIED RICE' , 3.40, 5),
+	 ('CHOW MEIN' , 3.40, 5),
+  	 ('CHICKEN EGG ROLL' , 1.95, 5),
+  	 ('VEGGIE SPRING ROLL' , 1.95, 5);
+
 
 //creating the ingredients table
 CREATE TABLE ingredients(
