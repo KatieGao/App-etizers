@@ -25,7 +25,7 @@ INSERT INTO genres (genre_name)
 CREATE TABLE restaurants(
     restaurant_id int(11) PRIMARY KEY AUTO_INCREMENT, 
     restaurant_name VARCHAR(255) NOT NULL,
-    FOREIGN KEY (genre_id) REFERENCES genres(genre_id),
+    FOREIGN KEY (genre_id) REFERENCES genres(genre_id)
 );
 INSERT INTO restaurants (restaurant_name,genre_id)
   VALUES ('California PIZZA KITCHEN',2),
