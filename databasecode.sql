@@ -36,9 +36,10 @@ INSERT INTO restaurants (restaurant_name,genre_id)
 
 //creating the dishes_ingredients table
 CREATE TABLE dishes_ingredients(
-    index int(11) PRIMARY KEY, 
-    FOREIGN KEY (dish_id) REFERENCES dishes(dish_id),
-    FOREIGN KEY (ingredient_id) REFERENCES ingredients(ingredient_id)
+    index int(11) PRIMARY KEY AUTO_INCREMENT, 
+    dish_id int(11),
+    FOREIGN KEY (dish_id) REFERENCES dishes(dish_id)
+    
 );
 
 
