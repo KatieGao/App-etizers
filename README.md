@@ -2,7 +2,7 @@
 
 //TODO: Web Pages:
   1. Main Search Page (yuming)
-  2. User Profile Page (Marika)
+  2. User Profile Page (Renhe)
   3. Dish Page(Renhe)
   4. Dish Detail Page 
   5. Restaurant Page (xizhe)
