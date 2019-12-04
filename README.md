@@ -5,3 +5,4 @@ only able to search limited restaurants because of the limited database.
 not in a perfect layout, some blocks don't appear in the right position they should be.
 not evey page can do search or go to the user profile page
 user can only log out on the main page because of insufficient communication among team members
+the database connection is sometimes unstable
