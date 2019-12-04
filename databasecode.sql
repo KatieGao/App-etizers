@@ -8,8 +8,8 @@ CREATE TABLE users
   username VARCHAR(255) NOT NULL,
   password VARCHAR(255) NOT NULL,
   PRIMARY KEY (user_id)
-  FOREIGN KEY (review_restaurant) REFERENCES restaurants(restaurant_id)
-  FOREIGN KEY (review_dish) REFERENCES dishes(restaurant_id)
+
+  FOREIGN KEY (review_dish) REFERENCES dishes(dish_id)
   
 );
 
